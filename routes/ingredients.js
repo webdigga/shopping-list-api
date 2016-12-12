@@ -19,9 +19,9 @@ router.post('/', function(req, res, next) {
 	});
 });
 
-/* GET /ingredients/id */
-router.get('/:id', function(req, res, next) {
-	Ingredient.findById(req.params.id, function (err, post) {
+/* GET /ingredients/category */
+router.get('/:category', function(req, res, next) {
+	Ingredient.find({ category: req.params.category }, function (err, post) {
 		if (err) return next(err);
 		res.json(post);
 	});
