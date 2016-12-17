@@ -1,3 +1,4 @@
+/*
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -66,3 +67,13 @@ mongoose.connect('mongodb://52.56.74.202:27017/local')
 	.catch((err) => console.error(err));
 
 module.exports = app;
+*/
+
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.listen(4000);
