@@ -5,5 +5,5 @@ var IngredientSchema = new mongoose.Schema({
 	option: Boolean,
 	recipe: String,
 	category: String
-}, { collection : 'ingredients' });
-module.exports = mongoose.model('Ingredient', IngredientSchema);
+});
+module.exports = mongoose.model('ingredient', IngredientSchema);
