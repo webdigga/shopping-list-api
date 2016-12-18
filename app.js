@@ -66,29 +66,6 @@ mongoose.connect('mongodb://52.56.74.202:27017/local')
 	.then(() =>  console.log('connection succesful'))
 	.catch((err) => console.error(err));
 
-app.listen(4000);
+app.listen(9000);
 
 module.exports = app;
-
-
-/*
-var express = require('express');
-var app = express();
-
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
-
-app.listen(4000);
-*/
-
-/*
-var http = require('http');
-
-var port = 9000;
-
-http.createServer(function (req, res) { res.writeHead(200, {'Content-Type': 'text/plain'}); res.end('Hello there, world!\n');
-}).listen(port);
-
-console.log('Listening on port', port);
-*/
