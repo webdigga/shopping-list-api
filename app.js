@@ -69,6 +69,7 @@ mongoose.connect('mongodb://52.56.74.202:27017/local')
 module.exports = app;
 */
 
+/*
 var express = require('express');
 var app = express();
 
@@ -77,3 +78,13 @@ app.get('/', function (req, res) {
 });
 
 app.listen(4000);
+*/
+
+var http = require('http');
+
+var port = 9000;
+
+http.createServer(function (req, res) { res.writeHead(200, {'Content-Type': 'text/plain'}); res.end('Hello there, world!\n');
+}).listen(port);
+
+console.log('Listening on port', port);
