@@ -62,7 +62,7 @@ mongoose.Promise = global.Promise;
 
 // connect to MongoDB
 //mongoose.connect('mongodb://localhost/shopping-list-api')
-mongoose.connect('mongodb://52.56.74.202:27017/local')
+mongoose.connect('mongodb://52.56.74.202:27017')
 	.then(() =>  console.log('connection succesful'))
 	.catch((err) => console.error(err));
 
